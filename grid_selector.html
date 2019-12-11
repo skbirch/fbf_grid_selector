@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
+</head>
+<h1 id="title">Select a Sequence</h1>
+  <section class="container">
+    <div id="left"></div>
+    <div id="right"></div>
+  </section>
+     <div class="float_center">
+    <div class="child">
+      <button class="selector selector1" onclick="matchGrid(size)">Find Array!</button>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+
+     <div class="float_center">
+    <div class="child">
+      <button class="selector selector1" onclick="displayDisp(size)">Generate Random Grid</button>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+  <script>
+    var size = 5
+      populateGrid(size, 'right');
+      populateDisplay(size, 'left');
+  </script>
+</html>
