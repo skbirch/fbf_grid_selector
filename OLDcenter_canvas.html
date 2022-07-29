@@ -1,0 +1,78 @@
+<!Doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+      function getChecked(checklist) {
+      var array = []
+      var checkboxes = checklist//document.querySelectorAll('input[type=checkbox]:checked')
+      for (var i = 0; i < checkboxes.length; i++) {
+        array.push(checkboxes[i].value)
+        }
+        return array
+      }
+  </script>
+</head>
+<!-- We want to center our <ul> into the container REGARDLESS of the number of <li> inside our <ul> -->
+
+<h1 id="title">Select a Sequence</h1>
+<section id="container">
+      <div class="float_center">
+        <div class="child">
+            <div class="btngroup">
+                <label><input type="checkbox" value="1"/><span class="button"></span></label>
+                <label><input type="checkbox" value="2"/><span class="button"></span></label>
+                <label><input type="checkbox" value="3"/><span class="button"></span></label>
+                <label><input type="checkbox" value="4"/><span class="button"></span></label>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+      <div class="float_center">
+        <div class="child">
+            <div class="btngroup">
+                <label><input type="checkbox" value="5"/><span class="button"></span></label>
+                <label><input type="checkbox" value="6"/><span class="button"></span></label>
+                <label><input type="checkbox" value="7"/><span class="button"></span></label>
+                <label><input type="checkbox" value="8"/><span class="button"></span></label>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+      <div class="float_center">
+        <div class="child">
+            <div class="btngroup">
+                <label><input type="checkbox" value="9"/><span class="button"></span></label>
+                <label><input type="checkbox" value="10"/><span class="button"></span></label>
+                <label><input type="checkbox" value="11"/><span class="button"></span></label>
+                <label><input type="checkbox" value="12"/><span class="button"></span></label>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+      <div class="float_center">
+        <div class="child">
+            <div class="btngroup">
+                <label><input type="checkbox" value="13"/><span class="button"></span></label>
+                <label><input type="checkbox" value="14"/><span class="button"></span></label>
+                <label><input type="checkbox" value="15"/><span class="button"></span></label>
+                <label><input type="checkbox" value="16"/><span class="button"></span></label>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+
+      <div class="float_center">
+        <div class="child">
+            <button class="selector selector1" onclick="console.log(getChecked(document.querySelectorAll('input[type=checkbox]:checked')))">Create Array</button>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+
+</section>
+</html>
